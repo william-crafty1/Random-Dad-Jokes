@@ -1,0 +1,110 @@
+/* Mobile Look */
+
+html{
+    background-color: black;
+    font-family: 'Oswald', sans-serif;;
+}
+
+.heading{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    background-color: black;
+    padding: 50px;
+    /*border: white solid 5px;*/
+
+
+}
+
+/* h1 CSS */
+
+.welcome-txt{
+    display: flex;
+    position: relative;
+    left: 33%;
+    /*border: white solid 5px;*/
+}
+
+/* header colors CSS */
+
+.blue{
+    color: #1c56d2;
+}
+
+.gold{
+    color: #9da519;
+}
+
+/* Button CSS */
+
+#jokeButton{
+    display: flex;
+    position: relative;
+    left: 373px;
+    top: 180px;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 15%;
+    font-size: large;
+    padding-left: 65px;
+    background-color: black;
+    color: #1c56d2;
+    border: #9da519 solid 2px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+
+#jokeButton:hover{
+    background-color: black;
+    color: #9da519;
+    border: #1c56d2 solid 2px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* joke container/text CSS */
+
+.container{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    background-color: black;
+    padding: 50px;
+    /*border: white solid 5px;*/
+}
+
+.subtext{
+    display: flex;
+    position: relative;
+    left: 40.3%;
+    /*border: white solid 5px;*/
+}
+
+.jokeArea{
+    display: flex;
+    position: relative;
+    left: -220px;
+    top: 300px;
+    height: 110px;
+    width: 70%;
+    padding: 5px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    word-wrap: break-word;
+    justify-content: center;
+
+
+}
+
+#joke{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: black;
+    color: whitesmoke;
+}
+
