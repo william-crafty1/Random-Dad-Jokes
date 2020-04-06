@@ -1,5 +1,4 @@
-/* Mobile Look */
-
+/* Desktop CSS */
 html{
     background-color: black;
     font-family: 'Oswald', sans-serif;;
@@ -11,9 +10,6 @@ html{
     flex-direction: row;
     background-color: black;
     padding: 50px;
-    /*border: white solid 5px;*/
-
-
 }
 
 /* h1 CSS */
@@ -22,7 +18,6 @@ html{
     display: flex;
     position: relative;
     left: 33%;
-    /*border: white solid 5px;*/
 }
 
 /* header colors CSS */
@@ -71,14 +66,12 @@ html{
     flex-direction: row;
     background-color: black;
     padding: 50px;
-    /*border: white solid 5px;*/
 }
 
 .subtext{
     display: flex;
     position: relative;
     left: 40.3%;
-    /*border: white solid 5px;*/
 }
 
 .jokeArea{
