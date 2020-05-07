@@ -1,6 +1,6 @@
 //Array with various jokes
 
-var quotes = new Array();
+let quotes = new Array();
 quotes[0]="What time did the man go to the dentist? Tooth hurt-y."
 quotes[1]="Which U.S. state is famous for its extra-small soft drinks? Minnesota!"
 quotes[2]="I’m so good at sleeping I can do it with my eyes closed!"
@@ -42,9 +42,9 @@ quotes[35]="If you see a robbery at an Apple Store does that make you an iWitnes
 //script is activated when button is clicked, this line listens for the click
 document.getElementById("jokeButton").onclick = function() {randomDisplay()};
 
-//the randomDisplay function qhich takes a random joke from the list writes it into the "joke" element
+//the randomDisplay function which takes a random joke from the list writes it into the "joke" element
 function randomDisplay(){
-randomquote=quotes[Math.floor(Math.random()*quotes.length)]
+let randomquote=quotes[Math.floor(Math.random()*quotes.length)]
 document.getElementById("joke").innerHTML= randomquote;
 }
 
