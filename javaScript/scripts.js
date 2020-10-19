@@ -44,7 +44,7 @@ document.getElementById("jokeButton").onclick = function() {randomDisplay()};
 
 //the randomDisplay function which takes a random joke from the list writes it into the "joke" element
 function randomDisplay(){
-let randomquote=quotes[Math.floor(Math.random()*quotes.length)]
+let randomquote = quotes[Math.floor(Math.random()*quotes.length)]
 document.getElementById("joke").innerHTML= randomquote;
 }
 
