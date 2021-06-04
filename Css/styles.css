@@ -14,6 +14,12 @@ html{
     padding: 50px;
 }
 
+@media (max-width: 576px){
+    .heading{
+        flex-direction: column;
+    }
+}
+
 .blue{
     color: #1c56d2;
 }
@@ -44,6 +50,7 @@ html{
     background-color: black;
     color: #9da519;
     border: #1c56d2 solid 2px;
+    transition: 0.4s;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -71,8 +78,6 @@ h2 {
 
 .jokeArea{
     display: flex;
-    height: 110px;
-    width: 70%;
     margin-top: 50px;
     padding: 5px;
     background-color: black;
@@ -81,8 +86,6 @@ h2 {
     text-align: center;
     word-wrap: break-word;
     justify-content: center;
-
-
 }
 
 #joke{
