@@ -12,6 +12,7 @@ html{
     flex-direction: row;
     background-color: black;
     padding: 50px;
+    height: 200px;
 }
 
 @media (max-width: 576px){
@@ -29,6 +30,10 @@ html{
 }
 
 /* Button CSS */
+
+#button-header{
+    padding: 20px;
+}
 
 #jokeButton{
     display: flex;
@@ -57,13 +62,17 @@ html{
 
 /* joke container/text CSS */
 
-.container{
+#main{
+    flex-direction: column;
+    background-color: black;
+}
+
+#button-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
-    padding: 50px;
 }
 
 .subtext{
@@ -79,7 +88,7 @@ h2 {
 .jokeArea{
     display: flex;
     margin-top: 50px;
-    padding: 5px;
+    padding: 10px;
     background-color: black;
     color: whitesmoke;
     font-family: 'Oswald', sans-serif;
