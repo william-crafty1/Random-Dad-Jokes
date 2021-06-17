@@ -38,14 +38,15 @@ quotes[33]="Justice is a dish best served cold, if it were served warm it would 
 quotes[34]="Why can't you hear a pterodactyl go to the bathroom? Because the pee is silent."
 quotes[35]="If you see a robbery at an Apple Store does that make you an iWitness?"
 
-
-//script is activated when button is clicked, this line listens for the click
-document.getElementById("jokeButton").onclick = function() {randomDisplay()};
-
 //the randomDisplay function which takes a random joke from the list writes it into the "joke" element
+// play sound when user clicks joke button
 function randomDisplay(){
 let randomquote = quotes[Math.floor(Math.random()*quotes.length)]
 document.getElementById("joke").innerHTML= randomquote;
+let sound = document.getElementById("joke-sound");
+sound.play();
 }
 
 setTimeout("randomDisplay()",100)
+
+// play sound when user clicks joke button

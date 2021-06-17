@@ -16,9 +16,33 @@
 
 <body>
 
-    <div class="heading">
-        <h1><span class="blue">Need a laugh?</span>&nbsp</h1>
-        <h1><span class="gold">Try a dad joke!</span></h1>
+    <div class="container-fluid" id="heading-container">
+        <div class="heading">
+            <h1><span class="blue">Need a laugh?</span>&nbsp</h1>
+            <h1><span class="gold">Try a dad joke!</span></h1>
+        </div>
+        <!-- Desktop view animated border -->
+        <div class="container-fluid" id="flashy-border">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle1"></div>
+            <!-- Border for mobile view animated border -->
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+            <div class="circle3"></div>
+        </div>
     </div>
 
 
@@ -31,7 +55,8 @@
         <div class="container" id="button-container">
             <div class="subtext">
                 <h2 id="button-header"><span class="blue">Press the button!</span></h2>
-                <button id="jokeButton">Tell Joke!</button>
+                <button id="jokeButton" onclick="randomDisplay()">Tell Joke!</button>
+                <audio id="joke-sound" src="assets/Ba-Bum-Tss.mp3"></audio>
             </div>
         </div>
         <div class="joke-container">
