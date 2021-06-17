@@ -211,3 +211,12 @@ h2 {
     color: whitesmoke;
 }
 
+/* Submit joke form CSS */
+
+#submit-joke-form{
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: whitesmoke;
+}
+

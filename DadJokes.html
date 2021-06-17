@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- External Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.png" />
 </head>
 
 <body>
@@ -53,7 +55,7 @@
                 <div class="button-area">
                     <button id="jokeButton" onclick="randomDisplay()">Tell Joke!</button>
                     <!-- <audio id="joke-sound" src="assets/Ba-Bum-Tss.mp3"></audio> -->
-                    <button id="submit-joke-btn">Submit a Joke</button>
+                    <button id="submit-joke-btn" onclick="displayJokeForm()">Submit a Joke</button>
                 </div>
             </div>
         </div>
@@ -63,6 +65,13 @@
             </div>
         </div>
     </div>
+
+    <!-- submit joke form -->
+
+    <div class="container" id="submit-joke-form">
+
+    </div>
+
     <!-- Javascript -->
     <script src="javaScript/scripts.js"></script>
 
