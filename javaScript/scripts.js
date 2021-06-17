@@ -18,7 +18,7 @@ jokeArray[13] = "“Doctor, I’ve broken my arm in several places” Doctor: �
 jokeArray[14] = "What is Mario's favourite play? Mamma Mia!"
 
 //the randomDisplay function which takes a random joke from the list writes it into the "joke" element
-// play sound when user clicks joke button
+//play sound when user clicks joke button
 function randomDisplay() {
     let randomquote = jokeArray[Math.floor(Math.random() * jokeArray.length)]
     document.getElementById("joke").innerHTML = randomquote;
@@ -28,13 +28,16 @@ function randomDisplay() {
 
 setTimeout("randomDisplay()", 100)
 
-// make the submit form appear
+// Scripting for joke submission form
+
+let jokeForm = document.getElementById("joke-form-container");
+let newJoke = document.querySelector(".joke-form textarea");
 
 function displayJokeForm() {
-    let jokeForm = document.getElementById("joke-form-container");
-    var op = 0.1; // initial opacity
+
+    let op = 0.1; // initial opacity
     jokeForm.style.display = "block";
-    var timer = setInterval(function () {
+    let timer = setInterval(function () {
         if (op >= 1) {
             clearInterval(timer);
         }
@@ -46,20 +49,19 @@ function displayJokeForm() {
 
 // push new joke to array and close form
 
-function submitJoke(){
-    let jokeForm = document.getElementById("joke-form-container");
-    let newJoke = document.querySelector(".joke-form textarea");
+function submitJoke() {
     // New Joke is added to array
-    jokeArray.push(newJoke.value);
-    // Form fadeout
-    var op = 1;  
-    var timer = setInterval(function () {
-        if (op <= 0.1){
-            clearInterval(timer);
-            jokeForm.style.display = 'none';
-        }
-        jokeForm.style.opacity = op;
-        jokeForm.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op -= op * 0.5;
-    }, 50);
-}
+        jokeArray.push(newJoke.value);
+
+        // form Fadeout
+        let op = 1;
+        let timer = setInterval(function () {
+            if (op <= 0.1) {
+                clearInterval(timer);
+                jokeForm.style.display = 'none';
+            }
+            jokeForm.style.opacity = op;
+            jokeForm.style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op -= op * 0.5;
+        }, 50);
+    }

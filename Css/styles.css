@@ -228,6 +228,8 @@ h2 {
 #joke-form-container {
     display: none;
     position: fixed;
+    justify-content: center;
+    align-items: center;
     top: 40%;
     left: 30%;
     height: 200px;
@@ -277,7 +279,14 @@ h2 {
 
 @media (max-width: 576px) {
     #joke-form-container{
-        width: 200px;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        left: 11%;
+    }
+
+    .textbox{
+        width: 250px;
     }
 }
 
