@@ -19,13 +19,34 @@
 <body>
 
     <div class="container-fluid" id="heading-container">
+        <!-- Desktop view animated border -->
+        <div class="container-fluid" id="flashy-border">
+            <div class="circle2"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <!-- Border for mobile view animated border -->
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+            <div class="circle3"></div>
+        </div>
         <div class="heading">
-            <h1><span class="blue">Need a laugh?</span>&nbsp</h1>
-            <h1><span class="gold">Try a dad joke!</span></h1>
+            <div class="circle1"></div>
+            <h1 class="left-head"><span class="blue">Need a laugh?</span>&nbsp</h1>
+            <h1 class="right-head"><span class="gold">Try a dad joke!</span></h1>
+            <div class="circle1"></div>
         </div>
         <!-- Desktop view animated border -->
         <div class="container-fluid" id="flashy-border">
-            <div class="circle1"></div>
             <div class="circle2"></div>
             <div class="circle1"></div>
             <div class="circle2"></div>
@@ -37,7 +58,6 @@
             <div class="circle2"></div>
             <div class="circle1"></div>
             <div class="circle2"></div>
-            <div class="circle1"></div>
             <!-- Border for mobile view animated border -->
             <div class="circle3"></div>
             <div class="circle4"></div>
@@ -51,11 +71,11 @@
     <div class="container-fluid" id="main">
         <div class="container" id="button-container">
             <div class="subtext">
-                <h2 id="button-header"><span class="blue">Press the button!</span></h2>
+                <h2 id="button-header"><span class="blue">Tell a joke or add your own!</span></h2>
                 <div class="button-area">
                     <button id="jokeButton" onclick="randomDisplay()">Tell Joke!</button>
-                    <!-- <audio id="joke-sound" src="assets/Ba-Bum-Tss.mp3"></audio> -->
-                    <button id="submit-joke-btn" onclick="displayJokeForm()">Submit a Joke</button>
+                    <audio id="joke-sound" src="assets/Ba-Bum-Tss.mp3"></audio>
+                    <button id="submit-joke-btn" onclick="displayJokeForm()">Submit a Joke!</button>
                 </div>
             </div>
         </div>
@@ -68,8 +88,12 @@
 
     <!-- submit joke form -->
 
-    <div class="container" id="submit-joke-form">
-
+    <div class="container" id="joke-form-container">
+        <form class="joke-form" >
+            <textarea class="textbox">
+            </textarea>
+            <button type="reset" id="add-joke" onclick="submitJoke()">Submit your Joke</button>
+        </form>
     </div>
 
     <!-- Javascript -->

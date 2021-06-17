@@ -1,27 +1,36 @@
 /* Desktop CSS */
-html{
+html {
     font-family: 'Oswald', sans-serif;
 }
 
-body{
+body {
     background-color: black;
     margin: 0;
 }
 
-#heading-container{
+#heading-container {
     display: flex;
     flex-direction: column;
     height: 200px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* Main header CSS */
-.heading{
+.heading {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     background-color: black;
+}
+
+.right-head{
+    margin-right: 2px;
+}
+
+.left-head{
+    margin-left: 2px;
 }
 
 /* animated border for header */
@@ -31,11 +40,12 @@ body{
     }
 }
 
-#flashy-border{
+#flashy-border {
     display: flex;
     justify-content: center;
 }
-.circle1{
+
+.circle1 {
     background-color: #1c56d2;
     width: 40px;
     height: 40px;
@@ -44,7 +54,8 @@ body{
     animation: blinker 2s linear infinite;
     animation-delay: 1s;
 }
-.circle2{
+
+.circle2 {
     background-color: #9da519;
     width: 40px;
     height: 40px;
@@ -53,20 +64,21 @@ body{
     animation: blinker 2s linear infinite;
 }
 
-@media (max-width: 576px){
-    .heading{
+@media (max-width: 576px) {
+    .heading {
         flex-direction: column;
     }
 
     /* Hide the desktop border and display the mobile version  */
-    .circle1{
-        display: none;
-    }
-    .circle2{
+    .circle1 {
         display: none;
     }
 
-    .circle3{
+    .circle2 {
+        display: none;
+    }
+
+    .circle3 {
         background-color: #1c56d2;
         width: 40px;
         height: 40px;
@@ -75,7 +87,8 @@ body{
         animation: blinker 2s linear infinite;
         animation-delay: 1s;
     }
-    .circle4{
+
+    .circle4 {
         background-color: #9da519;
         width: 40px;
         height: 40px;
@@ -85,23 +98,23 @@ body{
     }
 }
 
-.blue{
+.blue {
     color: #1c56d2;
 }
 
-.gold{
+.gold {
     color: #9da519;
 }
 
 /* Button/button div CSS */
 
-#button-header{
+#button-header {
     padding: 20px;
+    text-align: center;
 }
 
-#jokeButton{
+#jokeButton {
     border-radius: 10px;
-    border: none;
     height: 50px;
     width: 300px;
     font-size: large;
@@ -113,7 +126,7 @@ body{
     margin-right: 20px;
 }
 
-#jokeButton:hover{
+#jokeButton:hover {
     background-color: black;
     color: #9da519;
     border: #1c56d2 solid 2px;
@@ -121,9 +134,8 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 
-#submit-joke-btn{
+#submit-joke-btn {
     border-radius: 10px;
-    border: none;
     height: 50px;
     width: 300px;
     font-size: large;
@@ -134,7 +146,7 @@ body{
     cursor: pointer;
 }
 
-#submit-joke-btn:hover{
+#submit-joke-btn:hover {
     background-color: black;
     color: #9da519;
     border: #1c56d2 solid 2px;
@@ -142,7 +154,7 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 
-#button-container{
+#button-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,13 +162,13 @@ body{
     background-color: black;
 }
 
-.subtext{
+.subtext {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.button-area{
+.button-area {
     display: flex;
     flex-direction: row;
 }
@@ -166,31 +178,31 @@ h2 {
     align-self: center;
 }
 
-@media (max-width: 576px){
-    .button-area{
+@media (max-width: 576px) {
+    .button-area {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    #submit-joke-btn{
+    #submit-joke-btn {
         margin-top: 20px;
     }
 
-    #jokeButton{
+    #jokeButton {
         margin: auto;
     }
 }
 
 /* joke container/text CSS */
 
-#main{
+#main {
     flex-direction: column;
     background-color: black;
 }
 
 
-.jokeArea{
+.jokeArea {
     display: flex;
     margin-top: 50px;
     padding: 10px;
@@ -202,7 +214,7 @@ h2 {
     justify-content: center;
 }
 
-#joke{
+#joke {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -213,10 +225,73 @@ h2 {
 
 /* Submit joke form CSS */
 
-#submit-joke-form{
+#joke-form-container {
     display: none;
-    width: 100px;
-    height: 100px;
-    background-color: whitesmoke;
+    position: fixed;
+    top: 40%;
+    left: 30%;
+    height: 200px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 16px;
+    border: 2px solid #9da519;;
+    background-color: #000000;
 }
 
+.joke-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox{
+    background-color: black;
+    color: whitesmoke;
+    border: #1c56d2 solid 2px;
+    font-family: 'Oswald', sans-serif;
+    width: 450px;
+    height: 100px;
+}
+
+#add-joke{
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    font-size: large;
+    background-color: black;
+    color: #1c56d2;
+    border: #9da519 solid 2px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#add-joke:hover{
+    background-color: black;
+    color: #9da519;
+    border: #1c56d2 solid 2px;
+    transition: 0.4s;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (max-width: 576px) {
+    #joke-form-container{
+        width: 200px;
+    }
+}
+
+/* joke form animations */
+@keyframes fadeIn {
+    0% {opacity: 1;}
+    10% {opacity: 0.9;}
+    20% {opacity: 0.8;}
+    30% {opacity: 0.7;}
+    40% {opacity: 0.6;}
+    50% {opacity: 0.5;}
+    60% {opacity: 0.4;}
+    70% {opacity: 0.3;}
+    80% {opacity: 0.2;}
+    90% {opacity: 0.1;}
+    100% {opacity: 0;}
+}
