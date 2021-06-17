@@ -1,6 +1,6 @@
 /* Desktop CSS */
 html {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 body {
@@ -25,11 +25,11 @@ body {
     background-color: black;
 }
 
-.right-head{
+.right-head {
     margin-right: 2px;
 }
 
-.left-head{
+.left-head {
     margin-left: 2px;
 }
 
@@ -121,7 +121,7 @@ body {
     background-color: black;
     color: #1c56d2;
     border: #9da519 solid 2px;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     cursor: pointer;
     margin-right: 20px;
 }
@@ -131,7 +131,7 @@ body {
     color: #9da519;
     border: #1c56d2 solid 2px;
     transition: 0.4s;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 #submit-joke-btn {
@@ -142,7 +142,7 @@ body {
     background-color: black;
     color: #1c56d2;
     border: #9da519 solid 2px;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     cursor: pointer;
 }
 
@@ -151,7 +151,7 @@ body {
     color: #9da519;
     border: #1c56d2 solid 2px;
     transition: 0.4s;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 #button-container {
@@ -205,14 +205,13 @@ h2 {
     padding-right: 0px !important;
 }
 
-
 .jokeArea {
     display: flex;
     margin-top: 50px;
     padding: 10px;
     background-color: black;
     color: whitesmoke;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     text-align: center;
     word-wrap: break-word;
     justify-content: center;
@@ -228,7 +227,7 @@ h2 {
 }
 
 @media (max-width: 576px) {
-    #main{
+    #main {
         justify-content: center;
         align-items: center;
         width: 300px;
@@ -242,33 +241,35 @@ h2 {
     position: fixed;
     justify-content: center;
     align-items: center;
-    top: 40%;
-    left: 34%;
+    top: 50%;
+    left: 50%;
     height: 200px;
     width: 500px;
     padding: 20px;
+    margin-top: -100px; 
+    margin-left: -250px; 
     border-radius: 16px;
-    border: 2px solid #9da519;;
+    border: 2px solid #9da519;
     background-color: #000000;
 }
 
-.joke-form{
+.joke-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.textbox{
+.textbox {
     background-color: black;
     color: whitesmoke;
     border: #1c56d2 solid 2px;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     width: 450px;
     height: 100px;
 }
 
-#add-joke{
+#add-joke {
     border-radius: 10px;
     height: 50px;
     width: 200px;
@@ -276,41 +277,77 @@ h2 {
     background-color: black;
     color: #1c56d2;
     border: #9da519 solid 2px;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     cursor: pointer;
     margin-top: 15px;
 }
 
-#add-joke:hover{
+#add-joke:hover {
     background-color: black;
     color: #9da519;
     border: #1c56d2 solid 2px;
     transition: 0.4s;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 @media (max-width: 576px) {
-    #joke-form-container{
-        width: 300px;
-        left: 10%;
+    #joke-form-container {
+        width: 350px;
+        height: 200px;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -175px;
     }
 
-    .textbox{
+    .textbox {
         width: 250px;
     }
 }
 
 /* joke form animations */
 @keyframes fadeIn {
-    0% {opacity: 1;}
-    10% {opacity: 0.9;}
-    20% {opacity: 0.8;}
-    30% {opacity: 0.7;}
-    40% {opacity: 0.6;}
-    50% {opacity: 0.5;}
-    60% {opacity: 0.4;}
-    70% {opacity: 0.3;}
-    80% {opacity: 0.2;}
-    90% {opacity: 0.1;}
-    100% {opacity: 0;}
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    30% {
+        opacity: 0.7;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: 0.4;
+    }
+
+    70% {
+        opacity: 0.3;
+    }
+
+    80% {
+        opacity: 0.2;
+    }
+
+    90% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
