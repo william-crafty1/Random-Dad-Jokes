@@ -197,8 +197,12 @@ h2 {
 /* joke container/text CSS */
 
 #main {
+    display: flex;
     flex-direction: column;
-    background-color: black;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 
@@ -223,6 +227,14 @@ h2 {
     color: whitesmoke;
 }
 
+@media (max-width: 576px) {
+    #main{
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+}
+
 /* Submit joke form CSS */
 
 #joke-form-container {
@@ -231,7 +243,7 @@ h2 {
     justify-content: center;
     align-items: center;
     top: 40%;
-    left: 30%;
+    left: 34%;
     height: 200px;
     width: 500px;
     padding: 20px;
@@ -259,7 +271,7 @@ h2 {
 #add-joke{
     border-radius: 10px;
     height: 50px;
-    width: 150px;
+    width: 200px;
     font-size: large;
     background-color: black;
     color: #1c56d2;
@@ -279,10 +291,8 @@ h2 {
 
 @media (max-width: 576px) {
     #joke-form-container{
-        justify-content: center;
-        align-items: center;
         width: 300px;
-        left: 11%;
+        left: 10%;
     }
 
     .textbox{
