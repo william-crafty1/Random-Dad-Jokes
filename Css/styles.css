@@ -57,6 +57,8 @@ body{
     .heading{
         flex-direction: column;
     }
+
+    /* Hide the desktop border and display the mobile version  */
     .circle1{
         display: none;
     }
@@ -91,16 +93,35 @@ body{
     color: #9da519;
 }
 
-/* Button CSS */
+/* Button/button div CSS */
 
 #button-header{
     padding: 20px;
 }
 
 #jokeButton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 300px;
+    font-size: large;
+    background-color: black;
+    color: #1c56d2;
+    border: #9da519 solid 2px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#jokeButton:hover{
+    background-color: black;
+    color: #9da519;
+    border: #1c56d2 solid 2px;
+    transition: 0.4s;
+    font-family: 'Oswald', sans-serif;
+}
+
+#submit-joke-btn{
     border-radius: 10px;
     border: none;
     height: 50px;
@@ -113,20 +134,12 @@ body{
     cursor: pointer;
 }
 
-#jokeButton:hover{
+#submit-joke-btn:hover{
     background-color: black;
     color: #9da519;
     border: #1c56d2 solid 2px;
     transition: 0.4s;
     font-family: 'Oswald', sans-serif;
-}
-
-
-/* joke container/text CSS */
-
-#main{
-    flex-direction: column;
-    background-color: black;
 }
 
 #button-container{
@@ -140,12 +153,42 @@ body{
 .subtext{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.button-area{
+    display: flex;
+    flex-direction: row;
 }
 
 h2 {
     justify-content: center;
     align-self: center;
 }
+
+@media (max-width: 576px){
+    .button-area{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #submit-joke-btn{
+        margin-top: 20px;
+    }
+
+    #jokeButton{
+        margin: auto;
+    }
+}
+
+/* joke container/text CSS */
+
+#main{
+    flex-direction: column;
+    background-color: black;
+}
+
 
 .jokeArea{
     display: flex;
