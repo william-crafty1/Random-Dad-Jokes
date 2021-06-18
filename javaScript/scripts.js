@@ -17,7 +17,7 @@ jokeArray[12] = "Why was the big cat disqualified from the race? Because it was 
 jokeArray[13] = "“Doctor, I’ve broken my arm in several places” Doctor: “Well don’t go to those places.”"
 jokeArray[14] = "What is Mario's favourite play? Mamma Mia!"
 
-//the randomDisplay function which takes a random joke from the list writes it into the "joke" element
+//the randomDisplay function which takes a random joke from the array writes it into the "joke" element
 //play sound when user clicks joke button
 function randomDisplay() {
     let randomquote = jokeArray[Math.floor(Math.random() * jokeArray.length)]
@@ -35,7 +35,7 @@ let newJoke = document.getElementById("joke-textbox");
 
 function displayJokeForm() {
 
-    let op = 0.1; // initial opacity
+    let op = 0.1; 
     jokeForm.style.display = "block";
     let timer = setInterval(function () {
         if (op >= 1) {
@@ -50,8 +50,8 @@ function displayJokeForm() {
 // push new joke to array and close form
 
 function submitJoke() {
-    // New Joke is added to array
 
+    // check if input is empty, if not empty than pushes joke to array
     if (newJoke.value === '') {
         alert("Invalid input, please enter a joke!");
     } else {
