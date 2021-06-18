@@ -83,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <div class="joke-container">
+        <div class="container-fluid" id="joke-container">
             <div class="jokeArea">
                 <p id="joke"></p>
             </div>
@@ -93,10 +93,12 @@
     <!-- submit joke form -->
 
     <div class="container" id="joke-form-container">
-        <form class="joke-form" >
-            <textarea class="textbox">
-            </textarea>
-            <button type="reset" id="add-joke" onclick="submitJoke()">Submit your Joke</button>
+        <form name="joke-form" class="joke-form">
+            <input name="joke" class="textbox" id="joke-textbox">
+            <div class="joke-form-btn-div">
+                <button type="reset" id="add-joke" onclick="submitJoke()">Submit your Joke</button>
+                <button type="reset" id="add-joke" onclick="cancelSubmission()">Cancel</button>
+            </div>
         </form>
     </div>
 

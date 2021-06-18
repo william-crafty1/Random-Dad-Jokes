@@ -28,10 +28,10 @@ function randomDisplay() {
 
 setTimeout("randomDisplay()", 100)
 
-// Scripting for joke submission form
+// Scripting for joke submission form. form appears 
 
 let jokeForm = document.getElementById("joke-form-container");
-let newJoke = document.querySelector(".joke-form textarea");
+let newJoke = document.getElementById("joke-textbox");
 
 function displayJokeForm() {
 
@@ -51,9 +51,12 @@ function displayJokeForm() {
 
 function submitJoke() {
     // New Joke is added to array
-        jokeArray.push(newJoke.value);
 
-        // form Fadeout
+    if (newJoke.value === '') {
+        alert("Invalid input, please enter a joke!");
+    } else {
+        jokeArray.push(newJoke.value);
+        
         let op = 1;
         let timer = setInterval(function () {
             if (op <= 0.1) {
@@ -65,3 +68,19 @@ function submitJoke() {
             op -= op * 0.5;
         }, 50);
     }
+}
+
+// Cancel button is pressed and form closes
+
+function cancelSubmission(){
+    let op = 1;
+        let timer = setInterval(function () {
+            if (op <= 0.1) {
+                clearInterval(timer);
+                jokeForm.style.display = 'none';
+            }
+            jokeForm.style.opacity = op;
+            jokeForm.style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op -= op * 0.5;
+        }, 50);
+}
