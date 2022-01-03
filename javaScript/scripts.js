@@ -15,7 +15,7 @@ jokeArray[10] = "Did you hear about the man who stole a calendar? He got 12 mont
 jokeArray[11] = "I am terrified of elevators. I’m going to start taking steps to avoid them."
 jokeArray[12] = "Why was the big cat disqualified from the race? Because it was a cheetah."
 jokeArray[13] = "“Doctor, I’ve broken my arm in several places” Doctor: “Well don’t go to those places.”"
-jokeArray[14] = "What is Mario's favourite play? Mamma Mia!"
+jokeArray[14] = "What is Mario's favorite play? Mamma Mia!"
 
 //the randomDisplay function which takes a random joke from the array writes it into the "joke" element
 //play sound when user clicks joke button
